@@ -1,0 +1,104 @@
+.Grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 85%;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #455d7a;
+}
+
+.gridNames, .gridVNames {
+    display: grid;
+    grid-template-columns: 5% 20% 23% 20% 20% 6% 6%;
+    grid-template-rows: 100%;
+    height: 40px;
+    width: 100%;
+    padding: 0 7px;
+}
+
+.gridVNames {
+    grid-template-columns: 17% 17% 17% 16% 10% 9% 5% 7%;
+}
+
+.filtrado {
+    grid-template-columns: 18% 18% 15% 20% 15% 14%;
+}
+
+.gridName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 99%;
+    border-radius: 5px;
+    background-color: #233142;
+    text-align: center;
+}
+
+.gridItens {
+    height: 350px;
+    width: 99.5%;
+    border-radius: 5px;
+    margin-top: 1px;
+    border: 1px solid #233142;
+    padding: 3px;
+    overflow-y: auto;
+}
+
+
+::-webkit-scrollbar {
+    height: 4px;
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #233142; /* cor do botão da barra de rolagem */
+    border-radius: 6px; /* borda arredondada */
+}
+
+/* Estilos para a barra de rolagem quando passa o mouse sobre ela */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e3e3e3; /* cor do botão da barra de rolagem quando passa o mouse */
+}
+
+/* Estilos para a barra de rolagem de fundo */
+::-webkit-scrollbar-track {
+    background-color: #455d7a; /* cor de fundo da barra de rolagem */
+}
+
+
+@media only screen and (max-width: 782px) {
+
+    .Grid {
+        margin-bottom: 50px;
+    }
+
+    .gridNames, .gridVNames {
+        display: grid;
+        grid-template-columns: 18% 30% 32%;
+        grid-template-rows: 50% 50%;
+        height: 100px;
+        width: 100%;
+        padding: 0 7px;
+    }
+
+    .gridVNames {
+        grid-template-columns: 27% 27% 26%;
+    }
+
+    .gridItens {
+        height: 600px;
+    }
+
+    .data {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .filtrado {
+        grid-template-columns: 34% 33% 33%;
+    }
+}

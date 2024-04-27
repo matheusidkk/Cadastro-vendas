@@ -1,0 +1,17 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.textoSobre {
+    width: 60%;
+    margin-top: 200px;
+    border: 1px solid #e3e3e3;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
